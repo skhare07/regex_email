@@ -1,5 +1,9 @@
 package com.bridgelabz.regex_email;
 
+//Ability to check valid regex, returns true or false
+//compiles given regex using pattern.compile method matches input and regex gives a boolean output
+
+
 import java.util.regex.Pattern;
 
 public class RegexEmailValidate {
@@ -8,7 +12,7 @@ public class RegexEmailValidate {
         return pattern.matches(regex,input);
     }
     public static void main(String[] args){
-        boolean regexCheck = isValid("^[a-z]{1,10}$","abc");
+        boolean regexCheck = isValid("^[a-z]{1,10}[@][a-z]{1,10}$","name@bridgelabz");
         System.out.println(regexCheck);
     }
 
