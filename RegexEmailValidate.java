@@ -12,7 +12,7 @@ public class RegexEmailValidate {
         return pattern.matches(regex,input);
     }
     public static void main(String[] args){
-        boolean regexCheck = isValid("^[a-z]{1,10}[@][a-z]{1,10}$","name@bridgelabz");
+        boolean regexCheck = isValid("^[a-z]{1,10}[\\@][a-z]{1,10}[\\.][a-z]{1,4}$","name@bridgelabz.co");
         System.out.println(regexCheck);
     }
 
